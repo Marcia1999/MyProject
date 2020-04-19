@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+	<title>GST Billing Directory</title>
+</head>
+<style>
+p {
+  border: 2px #01579B;
+  background-color:#4FC3F7;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+}
+</style>
+<body>
+
+<div class="container">
+
+	<h3>GST Billing calculation</h3>
+	<hr>
+	<table class="table table-bordered table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th>Product_Code</th>
+				<th>Product_Name</th>
+				<th>Product_Price</th>
+				<th>Product_GST</th>
+				<th> Quantity </th>
+				<th> Product Total </th>
+				<th>Product Total including GST</th>
+			</tr>
+			<tr>
+			<td colspan="7" style="text-align:center;">
+			<p> No product is added to the list for GST Billing Calculation.<br>
+			 Add product to the list by searching using product code or product name in Billing page.
+			 </p>
+			</tr>
+		</thead>
+	</table>
+</div>
+<div style="text-align:center">    
+	 <a th:href="@{/products/showFormForBilling}">Continue Shopping</a>
+	 <br>
+	  <a th:href="@{/products/showFormForBilling}">Back to Billing page</a> 
+	  <br>
+	  <a th:href="@{/products/list}">Back to Product Entry</a>
+	  </div>
+</body>
+</html>
+
+
+
